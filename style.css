@@ -67,7 +67,7 @@ select {
   font: inherit;
 }
 
-.card-container {
+.product-container {
   display: flex;
   width: 1440px;
   height: 800px;
@@ -78,23 +78,23 @@ select {
   background: var(--Pure-White, #FFF);
 }
 @media screen and (max-width: 768px) {
-  .card-container {
+  .product-container {
     flex-direction: column;
   }
 }
-.card-container .card-image {
+.product-container .product-image {
   width: 100%;
 }
-.card-container .card-image .img-mobile {
+.product-container .product-image .img-mobile {
   display: none;
 }
-.card-container .card-content {
+.product-container .product-content {
   display: flex;
   flex-direction: column;
   gap: 28px;
   padding: 10px 30px;
 }
-.card-container .card-content p {
+.product-container .product-content p {
   color: var(--Aurometal-Saurus, #6C7289);
   font-feature-settings: "clig" off, "liga" off;
   font-family: Montserrat;
@@ -104,7 +104,7 @@ select {
   line-height: normal;
   letter-spacing: 5px;
 }
-.card-container .card-content .card-title {
+.product-container .product-content .product-title {
   color: var(--Gunmetal, #1C232B);
   font-feature-settings: "clig" off, "liga" off;
   /* Display */
@@ -114,7 +114,7 @@ select {
   font-weight: 700;
   line-height: 32px;
 }
-.card-container .card-content .card-description {
+.product-container .product-content .product-description {
   color: var(--Aurometal-Saurus, #6C7289);
   font-feature-settings: "clig" off, "liga" off;
   /* Body */
@@ -124,7 +124,7 @@ select {
   font-weight: 500;
   line-height: 23px; /* 164.286% */
 }
-.card-container .card-content .product-price {
+.product-container .product-content .product-price {
   color: var(--Deep-Aquamarine, #3D8168);
   font-feature-settings: "clig" off, "liga" off;
   /* Display */
@@ -134,7 +134,7 @@ select {
   font-weight: 700;
   line-height: 32px; /* 100% */
 }
-.card-container .card-content .product-price span {
+.product-container .product-content .product-price span {
   color: var(--Aurometal-Saurus, #6C7289);
   font-family: Montserrat;
   font-size: 13px;
@@ -143,7 +143,7 @@ select {
   line-height: 23px;
   text-decoration: line-through;
 }
-.card-container .card-content .btn {
+.product-container .product-content .btn {
   width: 236px;
   height: 48px;
   display: flex;
@@ -153,7 +153,7 @@ select {
   border-radius: 8px;
   background: var(--Deep-Aquamarine, #3D8168);
 }
-.card-container .card-content .btn p {
+.product-container .product-content .btn p {
   color: var(--Pure-White, #FFF);
   font-feature-settings: "clig" off, "liga" off;
   /* Button Text */
@@ -163,6 +163,6 @@ select {
   font-weight: 700;
   line-height: normal;
 }
-.card-container .card-content .btn:active {
+.product-container .product-content .btn:active {
   background: var(--deep-aquamarine-hover, #1A4032);
 }/*# sourceMappingURL=style.css.map */

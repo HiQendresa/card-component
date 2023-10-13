@@ -67,7 +67,7 @@ select {
   font: inherit;
 }
 
-.card-container {
+.product-container {
     display: flex;
     width: 1440px;
     height: 800px;
@@ -81,7 +81,7 @@ select {
     @media screen and (max-width: 768px) {
         flex-direction: column;
     }
-    .card-image{
+    .product-image{
         width: 100%;
 
         .img-mobile {
@@ -89,7 +89,7 @@ select {
         }
     }
 
-    .card-content {
+    .product-content {
         display: flex;
         flex-direction: column;
         gap: 28px;
@@ -107,7 +107,7 @@ select {
             letter-spacing: 5px;
         }
 
-        .card-title {
+        .product-title {
             color: var(--Gunmetal, #1C232B);
             font-feature-settings: 'clig' off, 'liga' off;
 
@@ -119,7 +119,7 @@ select {
             line-height: 32px; 
         }
         
-        .card-description {
+        .product-description {
             color: var(--Aurometal-Saurus, #6C7289);
             font-feature-settings: 'clig' off, 'liga' off;
 

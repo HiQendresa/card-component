@@ -1,0 +1,185 @@
+:root {
+    --clr-dark: 273 85% 13%;
+    --clr-green: 150 100% 63%;
+    --clr-gray: 271 12% 34%;
+}
+
+@font-face{
+    font-family: hankenGrotesk-bold;
+    src: url('./assets/fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Box sizing rules */
+*,
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+ 
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  overflow-x: hidden;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.card-container {
+    display: flex;
+    width: 1440px;
+    height: 800px;
+    padding: 175px 420px;
+    justify-content: center;
+    align-items: center;
+ 
+    border-radius: 10px;
+    background: var(--Pure-White, #FFF);
+    
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+    .card-image{
+        width: 100%;
+
+        .img-mobile {
+            display: none;
+        }
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        padding: 10px 30px;
+
+        p {
+            color: var(--Aurometal-Saurus, #6C7289);
+            font-feature-settings: 'clig' off, 'liga' off;
+
+            font-family: Montserrat;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 5px;
+        }
+
+        .card-title {
+            color: var(--Gunmetal, #1C232B);
+            font-feature-settings: 'clig' off, 'liga' off;
+
+            /* Display */
+            font-family: Fraunces;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px; 
+        }
+        
+        .card-description {
+            color: var(--Aurometal-Saurus, #6C7289);
+            font-feature-settings: 'clig' off, 'liga' off;
+
+            /* Body */
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23px; /* 164.286% */
+        }
+
+        .product-price {
+            color: var(--Deep-Aquamarine, #3D8168);
+            font-feature-settings: 'clig' off, 'liga' off;
+
+            /* Display */
+            font-family: Fraunces;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px; /* 100% */
+
+            span {
+                color: var(--Aurometal-Saurus, #6C7289);
+                font-family: Montserrat;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 23px;
+                text-decoration: line-through;
+            }
+        }
+
+        .btn {
+            width: 236px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            border-radius: 8px;
+            background: var(--Deep-Aquamarine, #3D8168);
+
+            p {
+                color: var(--Pure-White, #FFF);
+                font-feature-settings: 'clig' off, 'liga' off;
+
+                /* Button Text */
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            &:active {
+                background: var(--deep-aquamarine-hover, #1A4032);
+            }
+        }
+
+    }
+}

@@ -164,7 +164,7 @@ select {
             font-size: 14px;
             font-style: normal;
             font-weight: 500;
-            line-height: 23px; /* 164.286% */
+            line-height: 23px; 
         }
 
         .product-price {
@@ -176,11 +176,11 @@ select {
             font-size: 32px;
             font-style: normal;
             font-weight: 700;
-            line-height: 32px; /* 100% */
+            line-height: 32px; 
 
             display: flex;
             align-items: flex-start;
-            gap: 10px;
+            gap: 18px;
 
             span {
                 color: hsl(var(--Aurometal-Saurus))!important;

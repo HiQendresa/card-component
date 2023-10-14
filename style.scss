@@ -168,7 +168,7 @@ select {
         }
 
         .product-price {
-            color: hsl(var(--Deep-Aquamarine));
+            color: hsl(var(--clr-green-light));
             font-feature-settings: 'clig' off, 'liga' off;
 
             /* Display */
@@ -177,6 +177,12 @@ select {
             font-style: normal;
             font-weight: 700;
             line-height: 32px; /* 100% */
+
+            display: flex;
+            /* justify-content: space-around; */
+            align-items: flex-start;
+            gap: 10px;
+        }
 
             span {
                 color: hsl(var(--Aurometal-Saurus))!important;
